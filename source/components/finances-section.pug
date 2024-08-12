@@ -1,0 +1,63 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      h2.finances-section__title.font-s-40.font-w-bold.text-up.text-center
+        span.color-orange «Larets House»
+        | : более 5-ти лет 
+        br.no-br
+        | ведем успешную работу бизнеса
+      .finances-section__sub-title.font-s-28.font-w-regular.text-center
+        | Показатели, на которые вы можете рассчитывать,
+        br.no-br
+        | открыв компанию по нашей франшизе:
+      .swiper-finances
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card.card-white.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon1.svg" loading="lazy" width="60" height="60" alt="image")
+            .font-s-30 8 364 000 рублей
+            .finances-section__card-line-brown
+            .font-w-regular.font-s-18 ежемесячная <br> выручка
+          .finances-section__card.card-orange.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon2.svg" loading="lazy" width="60" height="60" alt="image")
+            .font-s-30 5 500 000 рублей
+            .finances-section__card-line-white
+            .font-w-regular.font-s-18 средний чек одного <br> клиента
+          .finances-section__card.card-white.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon1.svg" loading="lazy" width="60" height="60" alt="image")
+            .font-s-30 514 000 рублей
+            .finances-section__card-line-brown
+            .font-w-regular.font-s-18 ежемесячная <br> прибыль
+          .finances-section__card.card-orange.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon2.svg" loading="lazy" width="60" height="60" alt="image")
+            .font-s-30 15 месяцев
+            .finances-section__card-line-white
+            .font-w-regular.font-s-18 срок окупаемости <br> компании
+          .finances-section__card.card-white.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon1.svg" loading="lazy" width="60" height="60" alt="image")
+            .font-s-30 1 200 000 рублей
+            .finances-section__card-line-brown
+            .font-w-regular.font-s-18 средний размер <br> инвестиций
+          .finances-section__card.card-orange.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon2.svg" loading="lazy" width="60" height="60" alt="image")
+            .font-s-30 6,1%
+            .finances-section__card-line-white
+            .font-w-regular.font-s-18 рентабельность <br> по чистой прибыли
+        .finances-pagination.swiper-progress-finances
+
+      .finances-section__bottom
+        .finances-section__bottom-text
+          .font-s-44
+            | Нужно 
+            br.no-br
+            | больше 
+            br.no-br
+            span.color-finances-orange цифр 
+            | ?
+          .font-w-regular.font-s-26
+            | Получите финансовую 
+            br.no-br
+            | модель франшизы
+        form.finances-section__form(data-feedback-form)
+          input.input.input--color-brown.finances-item(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input.input--color-brown.finances-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn.btn--color-brown.finances-item-btn(type="submit") Получить

@@ -1,0 +1,53 @@
+.header
+  &__container
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content space-between
+    color #2B2B2B
+
+  &__title
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+    +above($breakpoints.sm)
+      flex-direction: row
+      gap: 20px
+    +above($breakpoints.md)
+      gap: 30px
+    +above($breakpoints.xxl)
+      gap: 43px
+
+  &__logo
+    width 120px
+    height: auto
+    +above($breakpoints.sm)
+      width 160px
+    +above($breakpoints.md)
+      width 200px
+    +above($breakpoints.xxl)
+      width 243px
+
+  &__brand
+    color: $color-white
+    display: none
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: column
+      justify-content center
+      gap 5px
+      border-left: 2px solid #fff
+      padding 2px 0 4px 20px
+    +above($breakpoints.md)
+      padding 2px 0 4px 30px
+    +above($breakpoints.xxl)
+      padding: 2px 0 4px 43px;
+
+  &__connection
+    width 100%
+    max-width: 120px
+    +above($breakpoints.sm)
+      max-width: 190px
+    +above($breakpoints.xxl)
+      align-self: flex-start;

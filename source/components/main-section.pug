@@ -1,0 +1,31 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      .main-section__header-wrapper
+        include ../components/header.pug
+      h1.main-section__title.font-w-bold.font-s-34.text-up
+        | Откройте строительную 
+        br.no-br
+        | компанию 
+        span.color-orange «Larets House» 
+        br.no-br
+        | и зарабатывайте 
+      .main-section__sub-title.font-w-bold.font-s-34.color-orange
+        | от 514 000 рублей 
+        br.no-br
+        | ежемесячно
+      .main-section__text
+        img.main-section__icon(src="images/main-section-icon.png" loading="lazy" width="224" height="196" alt="icon")
+        .font-w-regular.font-s-18
+          | Узнайте, как запустить 
+          br.no-br
+          | работу бизнеса всего 
+          br.no-br
+          | за 37 дней
+      .main-section__bottom
+        .font-s-18.text-center Получите подробный план открытия
+        form.main-section__form(data-feedback-form)
+          input.input.main-item(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input.main-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn.main-item-btn(type="submit") Получить
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1495" height="970" alt="image")

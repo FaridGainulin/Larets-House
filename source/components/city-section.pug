@@ -1,0 +1,24 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      h2.city-section__title.font-w-bold.font-s-34.text-up
+        | Зарабатывайте от 
+        span.color-orange 6,2 млн 
+        br.no-br
+        span.color-orange чистой прибыли в год 
+        br.no-br
+        | на собственной 
+        br.no-br
+        | строительной компании
+      .city-section__bottom
+        .font-w-bold.font-s-18.text-up.text-center
+          | Проверьте, свободен ли 
+          span.color-orange ваш город 
+          br.no-br
+          | для работы по франшизе 
+          span.color-orange «Larets House»
+        form.city-section__form(data-feedback-form)
+          input.input.city-item(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input.city-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn.city-item-btn(type="submit") проверить
+      img.city-section__img(src="images/city-section-img.png" loading="lazy" width="1408" height="1273" alt="image")

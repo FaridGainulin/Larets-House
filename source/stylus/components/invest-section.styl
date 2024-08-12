@@ -1,0 +1,100 @@
+.invest-section
+  background-color $color-white
+
+  &__container
+    padding 20px 0 0 0
+    +above($breakpoints.sm)
+      padding 50px 0 50px 0
+    +above($breakpoints.md)
+      padding 80px 0 80px 0
+    +above($breakpoints.xxl)
+      padding 120px 0 132px 0
+
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: row
+      justify-content center
+      gap: 20px
+
+  &__card
+    width 280px !important
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 15px
+    +above($breakpoints.sm)
+      width 350px !important
+    +above($breakpoints.md)
+      width 470px !important
+    +above($breakpoints.xxl)
+      width 580px !important
+
+  &__card-body
+    padding 20px 20px 20px 20px
+    display: flex
+    flex-direction: column
+    align-items: center
+    +above($breakpoints.sm)
+      padding 25px 20px 25px 20px
+    +above($breakpoints.md)
+      padding 38px 40px 38px 40px
+    +above($breakpoints.xxl)
+      padding 48px 60px 58px 60px
+
+  &__card-header
+    text-align: center
+    color: $color-white
+    background-color $color-orange
+    border-top-right-radius: 15px
+    border-top-left-radius: 15px
+    padding 20px 0 20px 0
+    // box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+    +above($breakpoints.md)
+      padding 31px 0 24px 0
+
+  &__card-body
+    // box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+    background: #fff;
+    border-bottom-right-radius: 15px
+    border-bottom-left-radius: 15px
+
+  &__card-sub-title
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content center
+    gap: 28px
+
+  &__card-icon
+    width 40px
+    height: 40px
+    +above($breakpoints.md)
+      width 55px
+      height: 55px
+    +above($breakpoints.xxl)
+      width 67px
+      height: 67px
+
+
+  &__card-img
+    width: 220px;
+    height: auto;
+    margin: -40px 0 -60px 0;
+    +above($breakpoints.md)
+      width 342px
+      margin: -52px 0 -82px 0;
+
+  &__form
+    width 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 8px
+    padding-top 20px
+    +above($breakpoints.md)
+      gap: 19px
+
+.invest-item-btn
+  +above($breakpoints.xxl)
+    margin-top 10px
+
